@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthID Recovery System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HealthID Recovery System</h1>
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <input type="text" id="holder-address" placeholder="Holder Address" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Share Section (hidden initially) -->
+        <div id="share-section" class="hidden">
+            <h2>Share Your Encrypted Data</h2>
+            <input type="text" id="encrypted-share" placeholder="Encrypted Share" required>
+            <button id="store-share">Store Share</button>
+            <button id="recover-share">Recover Share</button>
+        </div>
+
+        <!-- Message Area -->
+        <div id="message"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+    <script src="https://unpkg.com/merkletreejs/dist/merkletreejs.umd.js"></script>
+    <script src="https://unpkg.com/keccak/dist/keccak.js"></script>
+    <script type="module"src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>E-Voting System</h1>
+        <div id="login">
+            <h2>Login with Aadhaar Number</h2>
+            <input type="text" id="adharNo" placeholder="Enter Aadhaar Number">
+            <button id="getOTP">Get OTP</button>
+            <input type="number" id="otp" placeholder="Enter OTP" style="display:none;">
+            <button id="loginButton" style="display:none;">Login</button>
+        </div>
+        <div id="voting" style="display:none;">
+            <h2>Vote for Your Party</h2>
+            <select id="partySelect">
+                <option value="">Select Party</option>
+                <option value="ADMK">ADMK</option>
+                <option value="DMK">DMK</option>
+                <option value="BJP">BJP</option>
+                <option value="CONGRESS">CONGRESS</option>
+                <option value="TVK">TVK</option>
+                <option value="Nam Tamizhar">Nam Tamizhar</option>
+                <option value="MDMK">MDMK</option>
+            </select>
+            <button id="castVote">Cast Vote</button>
+        </div>
+    </div>
+    
+</body>
+</html>
